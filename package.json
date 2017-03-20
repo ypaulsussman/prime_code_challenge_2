@@ -1,0 +1,31 @@
+{
+  "name": "tau_code_challenge_3",
+  "version": "1.0.0",
+  "description": "tau code challenge 3 launchpad",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrimeAcademy/tau_code_challenge_3.git"
+  },
+  "keywords": [
+    "prime",
+    "tau",
+    "jquery",
+    "node",
+    "express"
+  ],
+  "author": "@devjana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrimeAcademy/tau_code_challenge_3/issues"
+  },
+  "homepage": "https://github.com/PrimeAcademy/tau_code_challenge_3#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0"
+  }
+}
