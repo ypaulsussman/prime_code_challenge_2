@@ -39,7 +39,7 @@ jokes = [
 
 app.get( '/', function( req, res ){
   // base url
-  console.log( 'base url hit' );
+  // console.log( 'base url hit' );
   res.sendFile( path.resolve( 'server/public/views/index.html' ) );
 }); // end base url
 
@@ -48,3 +48,15 @@ app.use( express.static( 'server/public/' ) );
 app.listen( app.get("port"), function(){
   console.log( 'server up on: ', app.get("port") );
 }); // end spin up server
+
+app.get('/allJokes', function(req, res) {
+  // console.log('all jokes, yay!');
+  res.send(jokes);
+});
+
+app.post('/addJoke', function(req, res) {
+  // console.log("you've added the joke");
+  // console.log(req.body);
+  jokes.unshift(req.body);
+  res.sendStatus(200);
+});
