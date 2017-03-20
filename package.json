@@ -1,7 +1,7 @@
 {
-  "name": "tau_code_challenge_3",
+  "name": "new_code_challenge_2",
   "version": "1.0.0",
-  "description": "tau code challenge 3 launchpad",
+  "description": "new code challenge 2 launchpad",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PrimeAcademy/tau_code_challenge_3.git"
+    "url": "git+https://github.com/PrimeAcademy/Chi_CodeChallenge_2.git"
   },
   "keywords": [
     "prime",
@@ -18,12 +18,8 @@
     "node",
     "express"
   ],
-  "author": "@devjana",
+  "author": "PrimeAcademy",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/PrimeAcademy/tau_code_challenge_3/issues"
-  },
-  "homepage": "https://github.com/PrimeAcademy/tau_code_challenge_3#readme",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0"

@@ -6,7 +6,9 @@ var bodyParser = require( 'body-parser' );
 var urlEncodedParser = bodyParser.urlencoded( { extended: true } );
 // use bodyParser.urlencoded throughout the app with this:
 app.use( bodyParser.urlencoded( { extended: false } ) );
-// initial jokes provided by the client
+
+app.set("port", (process.env.PORT || 5000));
+
 jokes = [
   {
     whoseJoke: "Danny",
@@ -27,18 +29,22 @@ jokes = [
     whoseJoke: "dEv",
     jokeQuestion: "Why should you not play cards in the forest?",
     punchLine: "Too many Cheetahs"
+  },
+  {
+    whoseJoke: "Scott",
+    jokeQuestion: "I went to the zoo the other day, it had one dog,",
+    punchLine: "It was a shih tzu."
   }
 ];
-
-// spin up server
-app.listen( 3333, function(){
-  console.log( 'server up on 3333' );
-}); // end spin up server
 
 app.get( '/', function( req, res ){
   // base url
   console.log( 'base url hit' );
-  res.sendFile( path.resolve( 'views/index.html' ) );
+  res.sendFile( path.resolve( 'server/public/views/index.html' ) );
 }); // end base url
 
-app.use( express.static( 'public' ) );
+app.use( express.static( 'server/public/' ) );
+
+app.listen( app.get("port"), function(){
+  console.log( 'server up on: ', app.get("port") );
+}); // end spin up server
