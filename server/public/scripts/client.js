@@ -25,7 +25,7 @@ $( document ).ready( function(){
   }); // end addJokeButton on click
 
   $('#outputDiv').on('mouseenter', '.punchline', function() {
-    console.log("seen the joke");
+    // console.log("seen the joke");
     $(this).append('<img src="views/the_awful_truth.jpg" alt="these jokes rank a solid AngryKanye out of 10">');
   });
 
